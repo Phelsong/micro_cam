@@ -1,0 +1,12 @@
+# config for Pad 33 size
+scale = 25
+# 25 to convert to mm
+median_offset = 1
+x_offset = 1
+y_offset = 1
+z_offset = 1
+
+
+[padding]
+x = 1
+y = 1

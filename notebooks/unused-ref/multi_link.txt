@@ -1,0 +1,8 @@
+https://docs.python.org/3/library/multiprocessing.html
+
+https://pypi.org/project/pyopencl/
+https://documen.tician.de/pyopencl/
+
+https://www.numpy.org
+https://pyscript.net
+

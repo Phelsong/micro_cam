@@ -1,0 +1,28 @@
+{
+    "cSpell.words": [
+        "arctan",
+        "argsort",
+        "contourpy",
+        "coor",
+        "copyto",
+        "Gcode",
+        "hostbuf",
+        "httpx",
+        "matplotlib",
+        "ndarray",
+        "ndimage",
+        "precisionfit",
+        "pyplot",
+        "scipy",
+        "wireframe",
+        "xticklabels",
+        "yticklabels",
+        "zticklabels"
+    ],
+    "python.analysis.typeCheckingMode": "basic",
+    "python.testing.pytestArgs": [
+        "tests"
+    ],
+    "python.testing.unittestEnabled": false,
+    "python.testing.pytestEnabled": true
+}

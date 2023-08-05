@@ -1,0 +1,27 @@
+Each triangle is described by twelve 32-bit floating-point numbers: three for the normal and then three for the X/Y/Z coordinate of each vertex – just as with the ASCII version of STL. 
+After these follows a 2-byte ("short") unsigned integer that is the "attribute byte count" – in the standard format, this should be zero because most software does not understand anything else.
+
+
+UINT8[80]    – Header                 -     80 bytes
+UINT32       – Number of triangles    -      4 bytes
+foreach triangle                      - 50 bytes:
+    REAL32[3] – Normal vector             - 12 bytes
+    REAL32[3] – Vertex 1                  - 12 bytes
+    REAL32[3] – Vertex 2                  - 12 bytes
+    REAL32[3] – Vertex 3                  - 12 bytes
+    UINT16    – Attribute byte count      -  2 bytes
+end
+
+
+Open the STL file in binary mode using the open function.
+Read the header of the file, which is an 80-byte ASCII string that contains a description of the model. You can use the read method to read this into a string.
+Read the number of triangles in the model, which is a 4-byte unsigned integer that follows the header. You can use the struct module to unpack this integer from the binary data.
+Iterate over the triangles in the model, using the number of triangles you read in the previous step to determine how many times to iterate. For each triangle, you will need to:
+Read the normal vector of the triangle, which is a 3-byte floating-point vector. You can use the struct module to unpack these values from the binary data.
+Read the three vertices of the triangle, which are also 3-byte floating-point vectors. You can use the struct module to unpack these values as well.
+Read the attribute byte count, which is a 2-byte unsigned integer that follows the vertices. You can use the struct module to unpack this value.
+Skip the attribute byte count, as it is not relevant for parsing the STL file.
+
+
+Iterate over the vertices of each triangle and add them to a list of points. You can do this by using a loop inside the loop that iterates over the triangles
+

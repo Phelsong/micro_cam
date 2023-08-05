@@ -1,0 +1,17 @@
+[[MCode]]
+M01="Optional Stop: Operator Selected to Enab"le
+M00 = "Program Stop (non-optional)"
+M02 = "End of Program"
+M03 = "Spindle ON (CW Rotation)"
+M04 = "Spindle ON (CCW Rotation)"
+M05 = "Spindle Stop"
+M06 = "Tool Change"
+M07 = "Mist Coolant ON"
+M08 = "Flood Coolant ON"
+M09 = "Coolant OFF"
+M17 = "FADAL subroutine return"
+M29 = "Rigid Tapping Mode on Fanuc Controls"
+M30 = "End of Program, Rewind and Reset Modes"
+M97 = "Haas-Style Subprogram Call"
+M98 = "Subprogram Call"
+M99 = "Return from Subprogram"

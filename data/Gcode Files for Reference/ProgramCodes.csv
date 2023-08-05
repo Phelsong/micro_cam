@@ -1,0 +1,44 @@
+﻿Programming Codes,,
+Abbreviation,Expansion,Corollary info
+APC,automatic pallet changer,See M60.
+ATC,automatic tool changer,See M06.
+CAD/CAM,computer-aided design and computer-aided manufacturing,
+CCW,counterclockwise,See M04.
+CNC,computerized numerical control,
+CRC,cutter radius compensation,"See also G40, G41, and G42."
+CS,cutting speed,"Referring to cutting speed (surface speed) in surface feet per minute (sfm, sfpm) or meters per minute (m/min)."
+CSS,constant surface speed,See G96 for explanation.
+CW,clockwise,See M03.
+DNC,direct numerical control or distributed numerical control," Sometimes referred to as ""Drip Feeding"" or ""Drip Numerical Control"" due to the fact that a file can be ""drip"" fed to a machine, line by line, over a serial protocol such as RS232. DNC allows machines with limited amounts of memory to run larger files."
+DOC,depth of cut,Refers to how deep (in the Z direction) a given cut will be
+EOB,end of block,"The G-code synonym of end of line (EOL). A control character equating to newline. In many implementations of G-code (as also, more generally, in many programming languages), a semicolon (;) is synonymous with EOB. In some controls (especially older ones) it must be explicitly typed and displayed. Other software treats it as a nonprinting/nondisplaying character, much like word processing apps treat the pilcrow (¶)."
+E-stop,emergency stop,
+EXT,external,"On the operation panel, one of the positions of the mode switch is ""external"", sometimes abbreviated as ""EXT"", referring to any external source of data, such as tape or DNC, in contrast to the computer memory that is built into the CNC itself."
+FIM,full indicator movement,
+FPM,feet per minute,See SFM.
+HBM,horizontal boring mill,"A type of machine tool that specializes in boring, typically large holes in large workpieces."
+HMC,horizontal machining center,
+HSM,high speed machining,"Refers to machining at speeds considered high by traditional standards. Usually achieved with special geared-up spindle attachments or with the latest high-rev spindles. On modern machines HSM refers to a cutting strategy with a light, constant chip load and high feed rate, usually at or near the full depth of cut.[15]"
+HSS,high-speed steel,"A type of tool steel used to make cutters. Still widely used today (versatile, affordable, capable) although carbide and others continue to erode its share of commercial applications due to their higher rate of material removal."
+in,inch(es),
+IPF,inches per flute,Also known as chip load or IPT. See F address and feed rate.
+IPM,inches per minute,See F address and feed rate.
+IPR,inches per revolution,See F address and feed rate.
+IPT,inches per tooth,Also known as chip load or IPF. See F address and feed rate.
+MDI,manual data input,A mode of operation in which the operator can type in lines of program (blocks of code) and then execute them by pushing cycle start.
+MEM,memory,"On the operation panel, one of the positions of the mode switch is ""memory"", sometimes abbreviated as ""MEM"", referring to the computer memory that is built into the CNC itself, in contrast to any external source of data, such as tape or DNC."
+MFO,manual feed rate override,"The MFO dial or buttons allow the CNC operator or machinist to multiply the programmed feed value by any percentage typically between 10% and 200%. This is to allow fine-tuning of speeds and feeds to minimize chatter, improve surface finish, lengthen tool life, and so on. The SSO and MFO features can be locked out for various reasons, such as for synchronization of speed and feed in threading, or even to prevent ""soldiering""/""dogging"" by operators. On some newer controls, the synchronization of speed and feed in threading is sophisticated enough that SSO and MFO can be available during threading, which helps with fine-tuning speeds and feeds to reduce chatter on the threads or in repair work involving the picking up of existing threads.[16]"
+mm,millimetre(s),
+MPG,manual pulse generator,Referring to the handle (handwheel) (each click of the handle generates one pulse of servo input)
+NC,numerical control,
+OSS,oriented spindle stop,See comments at M19.
+SFM,surface feet per minute,See also speeds and feeds and G96.
+SFPM,surface feet per minute,See also speeds and feeds and G96.
+SPT,single-point threading,
+SSO,spindle speed override,"The SSO dial or buttons allow the CNC operator or machinist to multiply the programmed speed value by any percentage typically between 10% and 200%. This is to allow fine-tuning of speeds and feeds to minimize chatter, improve surface finish, lengthen tool life, and so on. The SSO and MFO features can be locked out for various reasons, such as for synchronization of speed and feed in threading, or even to prevent ""soldiering""/""dogging"" by operators. On some newer controls, the synchronization of speed and feed in threading is sophisticated enough that SSO and MFO can be available during threading, which helps with fine-tuning speeds and feeds to reduce chatter on the threads or in repair work involving the picking up of existing threads.[16]"
+TC or T/C,"tool change, tool changer", See M06.
+TIR,total indicator reading,
+TPI,threads per inch,
+USB,Universal Serial Bus,One type of connection for data transfer
+VMC,vertical machining center,
+VTL,vertical turret lathe,"A type of machine tool that is essentially a lathe with its Z-axis turned vertical, allowing the faceplate to sit like a large turntable. The VTL concept overlaps with the vertical boring mill concept."

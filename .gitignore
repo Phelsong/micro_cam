@@ -1,0 +1,17 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+.venv
+build/**
+.pytest_cache/
+
+
+# Distribution / packaging
+.python-version
+uploads/*.stl
+temp/*.tap
+logs/*.db
+
+# OS X
+.DS_Store
+*.orig

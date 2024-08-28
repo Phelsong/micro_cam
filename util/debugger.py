@@ -1,4 +1,5 @@
 """ debugging tools """
+
 # lib
 import pandas as pd
 import numpy as np
@@ -6,7 +7,7 @@ import tomllib
 
 # import
 from functions.gcode import Gcode
-from functions.mesh_config import M_Config
+from functions.mesh_config import Mesh_Config
 from functions.file_writer import Writer
 from services.compute_service import map_to_gcode
 
@@ -24,12 +25,11 @@ def dump_to_file(in_path):
             f.write(f"G1 X{x} Y{y} Z{z}\n")
 
 
-def run_compute_test(test_file: str = "data\\33_763853NV_2mm-Grid.txt"):
+def run_compute_test(test_file: str = "data/Stl_testfiles/140_-_120_mm.STL"):
     map_to_gcode(test_file)
 
 
 if __name__ == "__main__":
     # test_file = ".\\140_-_120_mm.STL"
-    # run_compute_test(test_file="data\\33_FLAT.STL")
-    run_compute_test(test_file="data\\33_763853NV_2mm-Grid.txt")
-    # dump_to_file("data\\33_763853NV_2mm-Grid.txt")
+    run_compute_test(test_file="data/Stl_testfiles/140_-_120_mm.STL")
+    # dump_to_file("data/test.txt")

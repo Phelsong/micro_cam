@@ -7,7 +7,7 @@ import datetime
 class _Logger(object):
     def __init__(self) -> None:
         self.month: int = datetime.datetime.now().month
-        self.current_log: str = f".\\logs\\{self.month}.db"
+        self.current_log: str = f"./logs/{self.month}.db"
         self.current_time = lambda: datetime.datetime.now().strftime(
             "%Y-%m-%d %H:%M:%S"
         )

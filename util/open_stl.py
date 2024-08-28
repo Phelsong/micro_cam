@@ -2,10 +2,10 @@ from base64 import b64encode
 
 
 # NOTE: from stl_mesh.py, need to write a wrapper function here
-# if __name__ == "__main__":
-#     print("-----------------------------")
+if __name__ == "__main__":
+    print("-----------------------------")
 # Raw Mesh data
-# source_mesh = Mesh.from_file("X:\\0.code_projects\\precisionfit\\data\\33_FLAT.STL")
+# source_mesh = Mesh.from_file("data/Stl_testfiles/140_-_120_mm.STL")
 # print(source_mesh.normals)
 # ------------
 # The mesh normals (calculated automatically)

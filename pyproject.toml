@@ -49,3 +49,7 @@ compute = "util.debugger:run_compute_test"
 clear = "pwsh:Clear-Temp"
 cy_build = "cy_build:run_setup"            # not working yet
 # cy build |= python .\cy_build.py build_ext --inplace
+
+[tool.pyright]
+venvPath = "."
+venv = ".venv"

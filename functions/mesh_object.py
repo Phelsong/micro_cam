@@ -1,9 +1,10 @@
 """ in mesh object pointer"""
+
 # lib
 import numpy as np
 
 # ----
-MESH_OBJECTS = {}
+MESH_OBJECTS: dict = {}
 
 
 # ===========
@@ -11,7 +12,7 @@ class Mesh_Object(object):
     """sorted mesh object"""
 
     def __init__(self, line) -> None:  # type: ignore
-        self.id: float = len(M_OBJECTS) + 1
+        self.id: float = len(MESH_OBJECTS) + 1
         self.lines: dict[float, np.ndarray] = {
             line.id: np.array(line.coords, dtype=np.float16)
         }

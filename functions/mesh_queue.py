@@ -1,11 +1,11 @@
 """ in mesh object pointer"""
+
 # libs
 import numpy as np
 
 # imports
-from functions.mesh_config import M_Config
-from .mesh_line import M_Line
-
+from functions.mesh_config import Mesh_Config
+from .mesh_line import Mesh_Line
 
 # =====================================
 
@@ -13,7 +13,7 @@ from .mesh_line import M_Line
 class Mesh_Queue(object):
     """stack sorter"""
 
-    def __init__(self, config: M_Config):
+    def __init__(self, config: Mesh_Config):
         # TODO: update to use M_Stack
         self.stack: list = []
         self.sub_stack: list = []
@@ -70,7 +70,7 @@ class Mesh_Queue(object):
             try:
                 re_que = False
                 id = np.round(float(line[0][1]) * 1.5, 3)  # 1.5 to prevent merge
-                m_line = M_Line(id=id)
+                m_line = Mesh_Line(id=id)
                 self.last_qx = line[0][0]
                 check_y = np.diff((line[0][1], self.last_qy))
 

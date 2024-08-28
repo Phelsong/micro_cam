@@ -1,8 +1,9 @@
 """ in mesh object pointer"""
+
 import numpy as np
 
 # imports
-from functions.mesh_config import M_Config
+from functions.mesh_config import Mesh_Config
 
 # =====================================
 
@@ -10,7 +11,7 @@ from functions.mesh_config import M_Config
 class Mesh_Stack(object):
     """sub stack sorter"""
 
-    def __init__(self, config: M_Config):
+    def __init__(self, config: Mesh_Config):
         self.id = 0
         # self.dict: dict = {}
         self.stack: list = []

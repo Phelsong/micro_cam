@@ -1,4 +1,5 @@
 """ File Writer"""
+
 # lib
 from typing import TextIO
 import numpy as np
@@ -46,7 +47,7 @@ class Writer(object):
         last_coord: list[int] = [0, 0]
 
         # -----------
-        with open(f".\\temp\\{self.file}", "a") as f:
+        with open(f"./temp/{self.file}", "a") as f:
             # ---
             self.write_header(f)
 
@@ -112,7 +113,7 @@ class Writer(object):
         direction: bool = True
 
         for obj in MESH_OBJECTS:
-            with open(f".\\temp\\{MESH_OBJECTS[obj].id}.tap", "a") as f:
+            with open(f"./temp/{MESH_OBJECTS[obj].id}.tap", "a") as f:
                 # ------
                 for line in MESH_OBJECTS[obj].lines:
                     d_line = (

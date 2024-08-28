@@ -1,4 +1,5 @@
 """ ~exe function chain """
+
 # lib
 import tomllib
 from typing import Any
@@ -11,7 +12,7 @@ from functions.mesh_config import Mesh_Config
 from functions.mesh_parser import Mesh_Parser
 from functions.file_writer import Writer
 from functions.object_merger import Object_Merger
-from .app_logger import _Logger
+from services.app_logger import _Logger
 
 
 # -------------------
@@ -21,7 +22,7 @@ def map_to_gcode(filepath: str) -> None:
     """main app function"""
     # ----
 
-    config_path = "profiles\\example.toml"
+    config_path = "profiles/example.toml"
     f_name = "test.tap"
     logger = _Logger()
     logger.info(f"Compiling G-Code for {f_name}...")
@@ -33,8 +34,8 @@ def map_to_gcode(filepath: str) -> None:
         config_data: dict[str, Any] = tomllib.load(f)
     gcode: object = Gcode()
 
-    # raw_mesh, mesh_map = new_mesh(file_path, config)
-    raw_mesh, mesh_map = new_grid(filepath, config_data["scale"])
+    raw_mesh, mesh_map = new_mesh(filepath, config_data["scale"])
+    # raw_mesh, mesh_map = new_grid(filepath, config_data["scale"])
 
     config: Mesh_Config = Mesh_Config(f_name, config_data=config_data, mesh=raw_mesh)
 

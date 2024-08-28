@@ -1,4 +1,5 @@
 """Object Merger"""
+
 # libs
 
 # imports
@@ -7,7 +8,7 @@ from functions.mesh_config import Mesh_Config
 
 class Object_Merger:
     def __init__(self, config) -> None:
-        self.dont_remove = set()
+        self.dont_remove: set = set()
         self.config: Mesh_Config = config
 
     # =============================================================
@@ -31,7 +32,7 @@ class Object_Merger:
     # =============================================================
 
     def run_merge(self) -> bool:
-        from .mesh_object import MESH_OBJECTS
+        from functions.mesh_object import MESH_OBJECTS
 
         for ref_id, ref in MESH_OBJECTS.items():
             # ---

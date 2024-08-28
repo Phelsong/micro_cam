@@ -24,9 +24,9 @@ class Mesh_Line(object):
         if len(self.coords) < 1:
             return
             # ----
-        if new_obj is False and len(M_OBJECTS) > 0:
+        if new_obj is False and len(MESH_OBJECTS) > 0:
             # add to last existing object
-            last = next(reversed(M_OBJECTS.keys()))
+            last = next(reversed(MESH_OBJECTS.keys()))
             MESH_OBJECTS[last].append(self)
             # ----
         else:
